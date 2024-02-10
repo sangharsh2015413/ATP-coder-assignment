@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.to-do-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 0 0;
+}
+.to-do-heading h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    background-color: rgb(32, 90, 207);
+}
+.to-do-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(225, 228, 234);
+    width: 60%;
+    margin: 0 auto;
+    height: 70vh;
+    box-shadow: 10px 10px rgb(32, 90, 207);
+}
+.to-do-list .input-area{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+.to-do-list button{
+    color: white;
+    width: 4vw;
+    height: 5vh;
+    font-size: larger;
+    border: none;
+    margin: 5px;
+
+}
+.to-do-list button:hover {
+    cursor: pointer;
+    background-color: rgb(10, 153, 96);
+}
+
+.to-do-list .input-area input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: rgb(166, 172, 192);
+    color: rgb(183, 74, 74);
+    font-size: larger;
+    border: none;
+    margin: 5px;
+}
+
+.to-do-list input::placeholder{
+    text-align: center;
+    font-size:  medium;
+    color: rgb(32, 90, 207);
+}
+
+.to-do-list .show-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 55vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: auto;
+}
+.to-do-list .show-list-item .each-item{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    margin: 5px;
+    padding: 5px;
+    width: 96%;
+    box-shadow: 0px 1px rgb(84, 87, 97);
+    height: 7vh;
+}
+.to-do-list .show-list-item .each-item li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    width: 96%;
+    height: 5vh;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-field{  padding: 5px; }
+
+.checkbox{
+    width: 1vw;
+    height: 5vh;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}  
+
+@media screen and (max-width: 476px) {
+    .to-do-list .input-area input{
+        flex-direction: row;
+        width: 80%;
+    }
+    .to-do-list .input-area button{
+        width: 6vw;
+        height: 5vh; 
+    }
+}
+
+.round {
+    position: relative;
+  }
